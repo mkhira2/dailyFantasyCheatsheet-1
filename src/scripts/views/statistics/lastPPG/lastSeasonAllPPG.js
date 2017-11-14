@@ -24,14 +24,14 @@ var LastSeasonAllPPG = React.createClass({
 	      		</div>
 	      		<ReactTooltip place="bottom" effect="solid" multiline={true} offset={{bottom: 20, right: 9}}/>
 	      </div>
-	    ) 
+	    )
 	}
 })
 
 var Headers = React.createClass({
   componentDidMount: function() {
     $("#complete").tablesorter();
-  },
+  }, 
   render: function () {
     return (
       	<AllTable />
@@ -47,7 +47,7 @@ var Body = React.createClass({
         {preSortedData.map(function(player, i) {
             return (
               <tr key={i}>
-                <td id='align-left' className='firstcol'>{player.player}</td> 
+                <td id='align-left' className='firstcol'>{player.player}</td>
 				<td>{player.team}</td>
 				<td>{player.pos}</td>
 				<td>{player.gp}</td>
